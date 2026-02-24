@@ -121,7 +121,7 @@ If you have Claude Code set up, you can follow along with these steps:
 1. While within your repo, type `claude` at the command line to launch Claude Code
 2. Prompt Claude Code with this script:
   > i want to implement a difference-in-differences research design using `data/analysis_data.csv`, comparing the outcome `CO2_transport_capita` for different countries over time, with Sweden as the treated country starting in 1991. use a two-way fixed effects regression with country and year fixed effects. standard errors should be clustered at country, since that's the level of treatment assignment. ignore the inference problem of only one treated cluster. write a script to estimate the basic regression model and output a `.tex` table with the estimated treatment effect, standard errors, and other standard info. also estimate an event study version of the research design and output a `.pdf` figure of dynamic treatment coefficients. once the code is debugged, run it to output the files. think hard about this task and ask clarifying questions as needed before getting started.
-3. Use `git diff` to see what Claude Code changed in the repo.
+3. Use `git status` to see what files Claude Code changed in the repo. Open each file to inspect the changes.
 4. Use `git restore .` to discard the changes
 5. Type `/exit` to exit Claude Code
 
